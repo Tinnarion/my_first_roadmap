@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя дорожная карта</title>
+
+    <link rel="icon" href="image/favicon.png" type="image/png">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            background-image: url(image/background2.png);
+            background-attachment: scroll;
+            background-size: cover;
+            background-position: center center;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1e1e3b;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: center;
+            color: #475569;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px 25px;
+            margin-bottom: 20px;
+            border-left: 6px solid #9c9a9a;
+            box-shadow: 0 2px 8px rgba(100, 94, 94, 0.05);
+            transition: 0.2s;
+        }
+
+        .card h2 {
+            margin: 0 0 8px 0;
+            color: #0f172a;
+            font-size: 1.4rem;
+        }
+
+        .card p {
+            margin: 0 0 15px 0;
+            text-align: left;
+            color: #334155;
+        }
+
+        .done {
+            background: #e2e8f0;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            color: #1e293b;
+            cursor: pointer;
+            transition: 0.15s;
+        }
+
+        .done:hover {
+            background: #cbd5e1;
+        }
+
+        .card.completed {
+            border-left-color: #22c55e;
+            background: #f0fdf4;
+        }
+
+        .card.completed .done {
+            background: #22c55e;
+            color: white;
+        }
+
+        .card.completed .done:hover {
+            background: #16a34a;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Моя дорожная карта</h1>
+    <p>Данный проект представляет собой мою личную дорожную карту для освоения Fullstack-разработки. 
+        План включает последовательное изучение технологий от вёрстки до создания полноценных веб-приложений с бэкендом и деплоем.
+    </p>
+
+    <div class="card">
+        <h2>Этап 1: HTML</h2>
+        <p>Изучаются основы структуры веб-страницы: основные теги для заголовков, абзацев, списков, ссылок, изображений, таблиц и форм. 
+            Осваивается семантическая разметка, позволяющая правильно структурировать контент с помощью элементов header, nav, main, section, article и footer. Также рассматриваются правила вложенности и доступности.</p>
+        <button class="done">Не изучено</button>
+    </div>
+
+    <div class="card">
+        <h2>Этап 2: CSS</h2>
+        <p>Изучаются способы оформления страниц: работа с цветами, шрифтами, отступами, рамками и фонами. 
+            Осваиваются селекторы по тегу, классу и идентификатору, а также принципы каскадности и специфичности. Рассматривается блочная модель и использование псевдоклассов.</p>
+        <button class="done">Не изучено</button>
+    </div>
+
+    <div class="card">
+        <h2>Этап 3: Flexbox и Grid</h2>
+        <p>Осваиваются современные методы раскладки блоков. Изучаются свойства Flexbox для управления направлением, выравниванием и распределением пространства,
+             а также Grid для создания сложных сеток. Рассматриваются медиа-запросы для адаптации под различные устройства.</p>
+        <button class="done">Не изучено</button>
+    </div>
+
+    <div class="card">
+        <h2>Этап 4: JavaScript</h2>
+        <p>Изучаются базовые конструкции языка: переменные, типы данных, условные операторы, циклы и функции. 
+            Рассматривается работа с массивами и объектами, а также использование стрелочных функций для упрощения кода.</p>
+        <button class="done">Не изучено</button>
+    </div>
+
+    <div class="card">
+        <h2>Этап 5: DOM и события</h2>
+        <p>Осваивается работа с DOM: поиск элементов на странице, изменение их содержимого и стилей.
+             Рассматривается обработка событий, таких как клик, ввод текста и отправка форм, а также управление классами элементов.</p>
+        <button class="done">Не изучено</button>
+    </div>
+
+    <div class="card">
+        <h2>Этап 6: Хранение данных на клиенте</h2>
+        <p>Изучаются механизмы локального хранения данных в браузере через localStorage и sessionStorage. 
+            Осваиваются методы сохранения, извлечения и удаления данных, а также сериализация и десериализация объектов в формат JSON.</p>
+        <button class="done">Не изучено</button>
+    </div>
+
+    <div class="card">
+        <h2>Этап 7: Бэкенд на C#</h2>
+        <p>Изучается создание серверной части с использованием ASP.NET Core. Рассматриваются структура проекта, создание контроллеров, маршрутизация и модели данных. 
+            Осваиваются основные методы HTTP-запросов и работа с форматом JSON. Также затрагиваются основы подключения базы данных.</p>
+        <button class="done">Не изучено</button>
+    </div>
+
+    <div class="card">
+        <h2>Этап 8: Интеграция фронта и бэка</h2>
+        <p>Осваивается отправка HTTP-запросов с клиентской части с помощью fetch. 
+            Рассматриваются методы GET, POST, PUT и DELETE, а также обработка ответов от сервера. Изучается обновление интерфейса на основе полученных данных и взаимодействие с API.</p>
+        <button class="done">Не изучено</button>
+    </div>
+
+    <div class="card">
+        <h2>Этап 9: Git и деплой</h2>
+        <p>Изучаются основы работы с Git: инициализация репозитория, создание коммитов, работа с ветками и слияниями. 
+            Рассматривается публикация проектов на GitHub и их размещение на бесплатных хостингах для статических и динамических приложений.</p>
+        <button class="done">Не изучено</button>
+    </div>
+
+    <div class="card">
+        <h2>Этап 10: Финальный проект</h2>
+        <p>Разрабатывается полноценное приложение от начала до конца: выбор темы, проектирование архитектуры, 
+            создание базы данных, разработка API и интерфейса, интеграция компонентов, тестирование и устранение ошибок. Завершается проект подготовкой презентации и защитой.</p>
+        <button class="done">Не изучено</button>
+    </div>
+
+    <script>
+        const buttons = document.querySelectorAll('.done');
+        buttons.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                const card = this.parentElement;
+                card.classList.toggle('completed');
+                if (card.classList.contains('completed')) {
+                    this.textContent = '✅ Изучено';
+                } else {
+                    this.textContent = 'Не изучено';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
